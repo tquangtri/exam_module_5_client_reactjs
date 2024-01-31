@@ -1,0 +1,23 @@
+/***phuong án câu 6, mục react typescript 
+ *
+ * Thực hiện Drag and Drop cho danh sách Task 
+ *  (có thể sử dụng lib nhưng phải hiểu cách hoạt động)
+ * 
+ * ------>Như sau:
+ * Danh sách các item trong <ul>, sẽ được gán index bằng với id của Task
+
+ * Bước 1: bắt sự kiện kéo chuột trên element <li>
+ *  ---> lấy được vị trí đặt chuột so với vị trí (0,0)
+ *           của element lúc mới nhấn giữ,
+ *      đồng thời lấy thêm tọa độ mới của chuột trong khi kéo
+ * 
+ * Bước 2: Khi chưa thả chuột ra thì set vị trí cho element 
+ *    theo tọa độ của chuột. Sau đó offet lại một khoảng bằng 
+ *    vị trí đặt chuột so với (0,0) của element lúc mới nhấn giữ.
+ * 
+ * Bước 3: Khi thả chuột, tìm vị trí element trong list item gần với
+ * chuột nhất. Chèn element đang kéo thả vào vị trí đó.
+ *
+ */
+
+//
